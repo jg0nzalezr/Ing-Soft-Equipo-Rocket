@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyecto_ffinal.SignUpController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="278.0" style="-fx-background-color: DF5F3D;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="19.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Reborn2.jpeg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="400.0" prefWidth="445.0" style="-fx-background-color: E1DEDD;">
+         <children>
+            <Label layoutX="38.0" layoutY="33.0" text="Usuario">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="106.0" text="Contraseña">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameTextFieldSingUp" layoutX="39.0" layoutY="60.0" prefHeight="26.0" prefWidth="302.0" />
+            <TextField fx:id="passwordTextFieldSignUp" layoutX="38.0" layoutY="133.0" prefHeight="26.0" prefWidth="302.0" />
+            <Label layoutX="41.0" layoutY="179.0" text="Registrarse como:">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="compradorRadioButton" layoutX="52.0" layoutY="220.0" mnemonicParsing="false" text="Comprador">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="vendedorRadioButton" layoutX="52.0" layoutY="253.0" mnemonicParsing="false" text="Vendedor">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </RadioButton>
+            <Button fx:id="signUpButton" layoutX="148.0" layoutY="308.0" mnemonicParsing="false" style="-fx-background-color: DF5F3D; -fx-cursor: hand;" text="Sign Up">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="22.0" layoutY="356.0" text="Ya estas registrado?">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="loginButton" layoutX="192.0" layoutY="354.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Iniciar sesión" textFill="#1f01ff" underline="true">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
